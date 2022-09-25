@@ -1,0 +1,17 @@
+* {
+    font-family:sans-serif;
+}
+
+#title {
+   text-align: center;
+   color: rgb(56, 68, 12);
+}
+
+#description {
+    text-align: center;
+}
+
+#name-label, #email-label, #number-label {
+    font-weight: bolder;
+    padding: 10px;
+}
