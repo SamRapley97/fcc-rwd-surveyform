@@ -2,16 +2,45 @@
     font-family:sans-serif;
 }
 
+body {
+    text-align: center;
+    background-color: rgb(229, 236, 132);
+    color: rgb(61, 45, 10);
+    font-size: 1.5em;
+}
+
+
+fieldset {
+    width: 50%;
+    margin: auto;
+}
+
 #title {
    text-align: center;
-   color: rgb(56, 68, 12);
+   color: rgb(98, 112, 74);
 }
 
 #description {
-    text-align: center;
+    font-size: 1.5em;
+
+
 }
 
-#name-label, #email-label, #number-label {
+
+#name-label, #email-label, #number-label, #fav-sloth, #sloth-love, .sloth-food, .sloth-statements {
     font-weight: bolder;
-    padding: 10px;
+    display: block;
+    padding: 5px;
+  
 }
+
+#name, #email, #number {
+    width: 50%;
+    height: 20px;
+}
+
+#sloth-comments {
+    width: 50%;
+    height: 50px;
+}
+

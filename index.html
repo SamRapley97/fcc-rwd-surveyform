@@ -8,17 +8,20 @@
     </head>
     <body>
         <h1 id="title">Sloth Survey Form</h1>
+        <img src="https://files.worldwildlife.org/wwfcmsprod/images/Sloth_3_12_2014/story_full_width/2a8fgktz30_sloth__c__Jorge_Salas_International_Expeditions.JPG">
         <p id="description">This is a Sloth survey please take this very seriously as the survival of the sloth community depends on it.</p>
         <form id="survey-form">
             <fieldset>
-                    <label for="name" id="name-label">Name <input id="name" type="text" placeholder="John" required></input></label>
+              
+                    <label for="name" id="name-label">Name:<br><input id="name" type="text" placeholder="John" required></input>
 
-                    <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Must not be Yahoo" required></input></label>
+                    <label for="email" id="email-label">Email: <br> <input id="email" type="email" placeholder="Must not be Yahoo" required></input></label>
 
-                    <label for="number" id="number-label">Age <input id="number" type="number" min="0" max="99" placeholder="23" required> </input></label>
+                    <label for="number" id="number-label">Age: <br><input id="number" type="number" min="0" max="99" placeholder="23" required> </input></label>
+               
          </fieldset>
          <fieldset>
-                <label for="dropdown">Favourite Sloth?
+                <label for="dropdown" id="fav-sloth">Favourite Sloth?
                 </label>
                 <select id="dropdown">
                     <option value="Pygmy three-toed sloth">Pygmy three-toed sloth</option>
@@ -28,14 +31,14 @@
                     <option value="Linnaeus's two-toed sloth">Linnaeus's two-toed sloth</option>
                 </select>
 
-                <p>What type of food do Sloths eat?</p>
+                <p class="sloth-food">What type of food do Sloths eat?</p>
                 <input id="lettuce" type="radio" name="sloth-food" value="lettuce">
                 <label for="lettuce">Lettuce</label>
                 <input id="eucalyptus"  type="radio" name= "sloth-food" value="eucalyptus">
                 <label for="eucalyptus">Eucalyptus</label>
          </fieldset>
          <fieldset>
-                <p>Select which of these statements regarding Sloths are true</p>
+                <p class="sloth-statements">Select which of these statements regarding Sloths are true:</p>
                 <input type="checkbox" id="sloth-fact-1" value="poop">
                 <label for="sloth-fact-1">They poop once a week</label>
                 <br>
@@ -49,10 +52,11 @@
                 <label for="sloth-fact-2">They are really great swimmers</label>
          </fieldset>
          <fieldset>
-            <label for=""sloth-comments>What do you love about Sloths?</label>
-            <textarea id="sloth-comments" name="sloth-comments" rows="4" cols="70"></textarea>
+            <label for="sloth-comments" id="sloth-love">What do you love about Sloths?</label><br>
+            <textarea id="sloth-comments" name="sloth-comments"></textarea>
          </fieldset>
             <input type="submit" id="submit">
+           
         </form>
     </body>
 </html>
